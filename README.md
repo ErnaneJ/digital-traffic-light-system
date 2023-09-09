@@ -14,8 +14,20 @@ The objective of this work was to design a traffic light system in which the clo
 
 ## 💡 Schematic View
 
+Based on the designed schematic, the circuit was assembled, and a conceptual visualization of the PCB was produced using the KiCad software.
+
 <a src="./assets/schematic_view.pdf" align="center">
-  <img alt="schemativ view" src="./assets/schematic_view.png">
+  <img alt="schemativ view" src="./assets/schematic-test-view.png">
+</a>
+
+Below, you can observe the results of the 3D PCB project and in the KiCad PCB editor.
+
+<a src="./assets/schematic_view.pdf" align="center">
+  <img alt="schemativ view" src="./assets/digital-traffic-3D.png">
+</a>
+
+<a src="./assets/schematic_view.pdf" align="center">
+  <img alt="schemativ view" src="./assets/PCB_test_digital_traffic.png">
 </a>
 
 ---
