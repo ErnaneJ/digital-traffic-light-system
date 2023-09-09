@@ -1,6 +1,6 @@
 # Construction of a traffic light with digital systems 🚦
 
-The objective of this work was to design a traffic light system in which the closed signal lasts 5s, the attention signal lasts 2s and the open signal lasts 5s. The focus was not only to develop the project, but also to exercise the knowledge acquired regarding the Arduino platform as well as development in C by directly manipulating the registers of the microcontroller used (ATMega328p).
+The objective of this work was to design a traffic light system in which the closed signal lasts 5s, the attention signal lasts 2s and the open signal lasts 5s. The focus was not only to develop the project, but also to exercise the knowledge acquired regarding the Arduino platform as well as development in C by directly manipulating the registers of the microcontroller used (ATMega2560).
 
 ## 📦 Component List
 
