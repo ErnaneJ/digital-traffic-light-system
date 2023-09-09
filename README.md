@@ -6,7 +6,7 @@ The objective of this work was to design a traffic light system in which the clo
 
 |Name                       |Quantity|Component             |
 |---------------------------|--------|----------------------|
-|U1                         |1       |Arduino Uno R3 (328p) |
+|U1                         |1       |Arduino Mega 2560 |
 |DL_red                     |1       |Red LED               |
 |DL_yellow                  |1       |Yellow LED            |
 |RR_green, RR_yellow, RR_red|3       |100 Ω Resistor        |
