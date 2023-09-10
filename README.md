@@ -1,52 +1,85 @@
-# Construção de um Semáforo com Sistemas Digitais 🚦
+# Building a Traffic Light with Digital Systems 🚦
 
-O objetivo deste trabalho foi projetar um sistema de semáforo no qual o sinal fechado dura 5 segundos, o sinal de atenção dura 2 segundos e o sinal aberto dura 5 segundos. O foco não foi apenas desenvolver o projeto, mas também exercitar o conhecimento adquirido em relação à plataforma Arduino, bem como o desenvolvimento em C, manipulando diretamente os registradores do microcontrolador utilizado (ATMega2560).
+The objective of this project was to design a traffic light system in which the red signal lasts for 5 seconds, the amber signal lasts for 2 seconds, and the green signal lasts for 5 seconds. The focus was not only on developing the project but also on applying the knowledge acquired regarding the Arduino platform, as well as C programming, by directly manipulating the registers of the microcontroller used (ATMega2560 in practice and ATMega328p in simulations on [Tinkercad](https://www.tinkercad.com/)).
 
-## 📦 Lista de Componentes
+## 📦 Components List (Arduino Mega - ATMega2560)
 
-|Nome                       |Quantidade|Componente            |
-|---------------------------|----------|----------------------|
-|U1                         |    1     |Arduino Mega 2560     |
-|DL_vermelho                |    1     |LED Vermelho          |
-|DL_amarelo                 |    1     |LED Amarelo           |
-|DL_verde                   |    1     |LED Verde             |
-|RR_verde, RR_amarelo, RR_vermelho|    3     |Resistor de 100 Ω     |
+|Name                             |Quantity  |Component                |
+|---------------------------------|----------|--------------------------|
+|U1                               |    1     |Arduino Mega (ATMega2560) |
+|DL_red                           |    1     |Red LED                  |
+|DL_amber                         |    1     |Amber LED               |
+|DL_green                         |    1     |Green LED                 |
+|RR_green, RR_amber, RR_red       |    3     |100 Ω Resistor         |
 
-## 💡 Vista Esquemática
+## 📦 Components List (Arduino Uno - ATMega328p)
 
-Com base no esquema projetado, o circuito foi montado e uma visualização conceitual da PCB foi produzida usando o software KiCad, como demonstrado abaixo.
-- [Visão esquemática do projeto](./assets/schematic-test-view.png).
+|Name                             |Quantity  |Component                   |
+|---------------------------------|----------|-----------------------------|
+|U1                               |    1     |Arduino Uno (ATmega328p)     |
+|DL_red                           |    1     |Red LED                     |
+|DL_amber                         |    1     |Amber LED                   |
+|DL_green                         |    1     |Green LED                   |
+|RR_green, RR_amber, RR_red       |    3     |100 Ω Resistor               |
 
-**Abaixo, você pode observar os resultados do projeto de PCB 3D e no editor de PCB KiCad:**
+## 💡 Schematic View
 
-- [Resultados do PCB 3D](./assets/digital-traffic-3D.png).
-- [Editor de PCB KiCad](./assets/PCB_test_digital_traffic.png).
+|Schematic view of the project (ATMega2560)  | Schematic view of the project (Arduino Uno - ATMega) |
+|---------------------------------|----------|
+| [![Schematic view of the project (ATMega2560)](./assets/imgs/diagram-test-digital-traffic-atmega2560.png)](./assets/docs/diagram-test-digital-traffic-atmega2560.pdf) | [![Schematic view of the project (Arduino Uno - ATMega328p)](./assets/imgs/diagram-test-digital-traffic-atmega328p.png)](./assets/docs/diagram-test-digital-traffic-atmega328p.pdf) |
 
-## 💻 Simulação
+Based on the above schematics, the circuit was built, and a conceptual PCB view was produced using the [KiCad](https://www.kicad.org/) software. The model used for production was the circuit schematic using the ATMega 2560.
 
-<h4>Programa 1 - Manipulação Direta dos Registradores</h4>
+|KiCad PCB Editor (ATMega2560)  | 3D PCB (ATMega2560) |
+|---------------------------------|----------|
+| ![KiCad PCB Editor](./assets/imgs/pcb_digital_traffic_atmega2560.png) | ![3D PCB Results](./assets/imgs/pcb_digital_traffic_atmega2560_3d.png) |
 
-O primeiro programa utiliza a técnica de manipulação direta dos registradores para controlar os LEDs do semáforo. Neste caso, os LEDs estão conectados aos pinos 4, 5 e 6 do Arduino, que correspondem aos registradores DDRG, DDRE e DDRH. Comandos equivalentes para configurar os pinos como saída, ligar e desligar os LEDs e criar atrasos são realizados por meio de operações diretas com esses registradores. Este método é mais complexo e requer um conhecimento mais profundo do hardware subjacente.
+## 💻 Simulation
 
-<h4>Programa 2 - Uso de Comandos do Arduino</h4>
+### 📌 Program 1 - Direct Register Manipulation
 
-O segundo programa utiliza comandos nativos do Arduino para realizar as mesmas tarefas. Ele utiliza as funções `pinMode()` e `digitalWrite()` para configurar os pinos como saída e controlar os LEDs. Essas funções abstraem a manipulação direta dos registradores, tornando o código mais legível e acessível. Além disso, as funções `delay()` são usadas para criar atrasos temporais, tornando o código mais simples de entender.
+The first program uses native Arduino commands. It utilizes the `pinMode()` and `digitalWrite()` functions to configure the pins as outputs and control the LEDs. These functions abstract the direct manipulation of registers, making the code more readable and accessible. Additionally, the `delay()` functions are used to create time delays.
 
-<h4>Comandos Equivalentes</h4>
+### 📌 Program 2 - Using Arduino Commands
 
-Ambos os programas possuem comandos equivalentes, que desempenham funções semelhantes:
-<ol>
-  <li>Configuração dos pinos como saída: Ambos utilizam comandos para configurar os pinos dos LEDs como saída.</li>
-  <li>Controle dos LEDs: Ambos utilizam comandos para ligar e desligar os LEDs.</li>
-  <li>Atrasos (Delays): Ambos utilizam comandos para criar atrasos temporais.</li>
-</ol>
+The second program employs the technique of direct register manipulation to control the traffic light LEDs. In this case, the LEDs are connected to pins 4, 5, and 6 of the Arduino, which correspond to registers DDRG, DDRE, and DDRH for ATMega2560 and the DDRD register group in the case of ATMega328p. Equivalent commands to configure the pins as outputs, turn the LEDs on and off, and create delays are performed through direct operations with these registers. This method is more complex and requires a deeper understanding of the underlying hardware.
 
-**Acesse o relatório [aqui](https://docs.google.com/document/d/1Vi-jQYvrnQ7ScGuVZsoD0Jnd9IB_S97zQoPqURQRzTI/edit?usp=sharing).**<br>
-**Video da prática [aqui](https://youtube.com/shorts/Nvl-8OjJIZM).**<br>
-**Video da simulação no TinkerCad [aqui](https://youtu.be/mYE4NWMDbbM)**
+### 📌 Equivalent Commands
+
+Both programs have equivalent commands that perform similar functions:
+
+1. **Setting pins as outputs**: Both use commands to configure the LED pins as outputs.
+2. **LED control**: Both use commands to turn the LEDs on and off.
+3. **Delays**: Both use commands to create time delays.
+
+<table>
+  <thead>
+    <th> Lab Practice | Arduino MEGA - ATMega2560</th>
+    <th> Tinkercad Simulation | Arduino Uno - ATMega328p</th>
+  </thead>
+  <tbody>
+    <td>
+      <video src="./assets/videos/practice.mp4"></video>
+    </td>
+    <td>
+      <video src="./assets/videos/simulation.mp4"></video>
+    </td>
+  </tbody>
+</table>
+
+### 📄 Report
+
+- Access the report [here](./assets/docs/project_report.pdf).
+
+### 🫂 Authors
+
+- [Ernane Ferreira](https://github.com/ernanej)
+- [Quelita Mirian](https://github.com/quelita2)
+- [Thiago Lopes](https://github.com/thiagonasmto)
 
 ---
 
 <div align="center">
-  Universidade Federal do Rio Grande do Norte - Departamento de Engenharia de Computação e Automação (DCA).
+  DCA0119 - Digital Systems (2023.1) <br/>
+  Federal University of Rio Grande do Norte - Department of Computer and Automation Engineering (DCA).
 </div>
