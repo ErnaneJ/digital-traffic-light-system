@@ -41,8 +41,8 @@ Ambos os programas possuem comandos equivalentes, que desempenham funções seme
   <li>Atrasos (Delays): Ambos utilizam comandos para criar atrasos temporais.</li>
 </ol>
 
-Acesse o relatório [aqui](https://docs.google.com/document/d/1Vi-jQYvrnQ7ScGuVZsoD0Jnd9IB_S97zQoPqURQRzTI/edit?usp=sharing).
-Acesse a simulação [aqui](https://youtube.com/shorts/Nvl-8OjJIZM).
+**Acesse o relatório [aqui](https://docs.google.com/document/d/1Vi-jQYvrnQ7ScGuVZsoD0Jnd9IB_S97zQoPqURQRzTI/edit?usp=sharing).**<br>
+**Acesse a simulação [aqui](https://youtube.com/shorts/Nvl-8OjJIZM).**
 
 ---
 
