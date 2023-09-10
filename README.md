@@ -33,7 +33,7 @@ Below, you can observe the results of the 3D PCB project and in the KiCad PCB ed
 ## 💻 Simulation
 
 <div>
-  Access the simulation through this <a scr="https://youtube.com/shorts/Nvl-8OjJIZM">link</a>.
+  <a scr="https://youtube.com/shorts/Nvl-8OjJIZM">Access the simulation through this link</a>.
 </div>
 
 ---
