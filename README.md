@@ -33,11 +33,7 @@ Below, you can observe the results of the 3D PCB project and in the KiCad PCB ed
 ## 💻 Simulation
 
 <a scr="./assets/simulation.mp4" align="center">
-  <video alt="simulation video" src="./assets/simulation.mp4" 
-  controls
-  width="200"
-  autoplay 
-  muted>
+  <video alt="simulation video" src="./assets/simulation.mp4" constrols width="200" autoplay muted>
   </video>
 </a>
 
