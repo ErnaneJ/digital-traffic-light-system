@@ -52,20 +52,9 @@ Both programs have equivalent commands that perform similar functions:
 2. **LED control**: Both use commands to turn the LEDs on and off.
 3. **Delays**: Both use commands to create time delays.
 
-<table>
-  <thead>
-    <th> Lab Practice | Arduino MEGA - ATMega2560</th>
-    <th> Tinkercad Simulation | Arduino Uno - ATMega328p</th>
-  </thead>
-  <tbody>
-    <td>
-      <video src="./assets/videos/practice.mp4"></video>
-    </td>
-    <td>
-      <video src="./assets/videos/simulation.mp4"></video>
-    </td>
-  </tbody>
-</table>
+|Lab Practice • Arduino MEGA - ATMega2560  | Tinkercad Simulation • Arduino Uno - ATMega328p |
+|------------------------------------------|-------------------------------------------------|
+| [![Practice](./assets/imgs/practice_preview.png)](./assets/videos/practice.mp4) | [![Simulation](./assets/imgs/simulation_preview.png)](./assets/videos/simulation.mp4) |
 
 ### 📄 Report
 
