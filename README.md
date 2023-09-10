@@ -25,8 +25,6 @@ Based on the designed schematic, the circuit was assembled, and a conceptual vis
 - [Resultados do PCB 3D](./assets/digital-traffic-3D.png).
 - [Editor de PCB KiCad](./assets/PCB_test_digital_traffic.png).
 
-Esses links permitirão que os leitores cliquem nas imagens para visualizá-las em tamanho completo diretamente a partir do README do seu repositório. Certifique-se de que os caminhos dos links estejam corretos em relação ao local do seu arquivo README.md no repositório.
-
 ## 💻 Simulation
 Access the simulation through this [link](https://youtube.com/shorts/Nvl-8OjJIZM).
 
