@@ -30,6 +30,17 @@ Below, you can observe the results of the 3D PCB project and in the KiCad PCB ed
   <img alt="schemativ view" src="./assets/PCB_test_digital_traffic.png">
 </a>
 
+## 💻 Simulation
+
+<a scr="./assets/simulation.mp4" align="center">
+  <video alt="simulation video" src="./assets/simulation.mp4" 
+  controls
+  width="200"
+  autoplay 
+  muted>
+  </video>
+</a>
+
 ---
 
 <div align="center">
