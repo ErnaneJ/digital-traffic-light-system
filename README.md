@@ -28,11 +28,6 @@ Com base no esquema projetado, o circuito foi montado e uma visualização conce
 
 O primeiro programa utiliza a técnica de manipulação direta dos registradores para controlar os LEDs do semáforo. Neste caso, os LEDs estão conectados aos pinos 4, 5 e 6 do Arduino, que correspondem aos registradores DDRG, DDRE e DDRH. Comandos equivalentes para configurar os pinos como saída, ligar e desligar os LEDs e criar atrasos são realizados por meio de operações diretas com esses registradores. Este método é mais complexo e requer um conhecimento mais profundo do hardware subjacente.
 
-<<<<<<< HEAD
-<div>
-  <a scr="https://youtube.com/shorts/Nvl-8OjJIZM">Access the simulation through this link</a>.
-</div>
-=======
 <h4>Programa 2 - Uso de Comandos do Arduino</h4>
 
 O segundo programa utiliza comandos nativos do Arduino para realizar as mesmas tarefas. Ele utiliza as funções `pinMode()` e `digitalWrite()` para configurar os pinos como saída e controlar os LEDs. Essas funções abstraem a manipulação direta dos registradores, tornando o código mais legível e acessível. Além disso, as funções `delay()` são usadas para criar atrasos temporais, tornando o código mais simples de entender.
@@ -47,8 +42,8 @@ Ambos os programas possuem comandos equivalentes, que desempenham funções seme
 </ol>
 
 **Acesse o relatório [aqui](https://docs.google.com/document/d/1Vi-jQYvrnQ7ScGuVZsoD0Jnd9IB_S97zQoPqURQRzTI/edit?usp=sharing).**<br>
-**Acesse a simulação [aqui](https://youtube.com/shorts/Nvl-8OjJIZM).**
->>>>>>> 7914611befe66abbf2ec35c0e649260312a4ccb7
+**Video da prática [aqui](https://youtube.com/shorts/Nvl-8OjJIZM).**<br>
+**Video da simulação no TinkerCad [aqui](https://youtu.be/mYE4NWMDbbM)**
 
 ---
 
