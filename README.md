@@ -54,7 +54,7 @@ Both programs have equivalent commands that perform similar functions:
 
 |Lab Practice • Arduino MEGA - ATMega2560  | Tinkercad Simulation • Arduino Uno - ATMega328p |
 |------------------------------------------|-------------------------------------------------|
-| [![Practice](./assets/imgs/practice_preview.png)](./assets/videos/practice.mp4) | [![Simulation](./assets/imgs/simulation_preview.png)](./assets/videos/simulation.mp4) |
+| [![Practice](./assets/imgs/practice_preview.png)](https://youtube.com/shorts/Nvl-8OjJIZM) | [![Simulation](./assets/imgs/simulation_preview.png)](https://youtu.be/LXyF9HPAk9k) |
 
 ### 📄 Report
 
